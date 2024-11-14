@@ -1,4 +1,4 @@
-# Starter folder
+# Price Patterns and Stock Status: Analyzing 'Club House' Brand Strategies
 
 ## Overview
 
