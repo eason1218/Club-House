@@ -4,7 +4,8 @@ author: Yizhuo Li
 format: pdf
 date: November 14, 2024
 date-format: long
-abstract: This paper explores "Club House" product pricing and stock status impact, using data from the Filipp Hammer database. Results show most products priced low, with slight price differences by stock status. Caution is advised due to causation, missing data, and bias concerns, providing insights into potential influences on Club House’s pricing strategy.
+abstract: The "Club House" product pricing and stock status impact, using data from the Filipp Hammer database. Results show most products priced low, with slight price differences by stock status. Caution is advised due to causation, missing data, and bias concerns, providing insights into potential influences on Club House’s pricing strategy.
+number-sections: true
 bibliography: references.bib
 ---
 
@@ -50,6 +51,7 @@ ggplot(data_cleaned, aes(x = current_price)) +
 
 ```
 @fig-figure1 illustrates the price distribution for all products. The distribution is notably multi-modal, with several prominent peaks within the 0 to 10 price range, indicating clusters of product prices around specific values. The density drops sharply beyond a price of 10, with very few products priced above this threshold. This skewed distribution suggests that most products fall within a lower price bracket, with some variation around certain price points. The data could indicate different tiers or categories of products grouped around particular price levels, though it is unclear if external factors (such as promotions or seasonal pricing) might influence these clusters.
+\newpage
 ```{r}
 #| label: fig-figure2
 #| echo: false
@@ -80,7 +82,6 @@ ggplot(data_cleaned, aes(x = stock_status, y = as.numeric(current_price))) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
-\newpage
 @fig-figure2 presents a comparison of product prices across different stock statuses (Available, Low Stock, Out of Stock) using box plots. Products marked as “Available” have a wide range of prices, with a moderate median price and several high outliers. "Low Stock" products appear to have a slightly higher median price, but the range is more condensed, with fewer extreme values. “Out of Stock” products also show a wide range, although their median is similar to the “Available” category. This breakdown suggests potential pricing differences associated with inventory status, though additional analysis is needed to determine if there is any causal relationship between stock status and price.
 
 # Discussion
@@ -90,9 +91,11 @@ In analyzing the relationship between stock status and pricing, it's important t
 
 ## Missing Data
 
-The integrity of conclusions drawn from data analysis is significantly impacted by the completeness of the dataset. Missing data, particularly if systematic (e.g., consistently missing data for certain price ranges or during specific periods), can skew the analysis. For example, if higher-priced items are underreported, this might falsely suggest a prevalence of lower prices across the board. The absence of comprehensive data hampers the ability to accurately depict the true nature of pricing and stock dynamics, potentially leading to erroneous strategic recommendations.
+The integrity of conclusions drawn from data analysis is significantly impacted by the completeness of the data set. Missing data, particularly if systematic (e.g., consistently missing data for certain price ranges or during specific periods), can skew the analysis. For example, if higher-priced items are underreported, this might falsely suggest a prevalence of lower prices across the board. The absence of comprehensive data hampers the ability to accurately depict the true nature of pricing and stock dynamics, potentially leading to erroneous strategic recommendations.
 
 ## Sources of Bias
 
-Bias in data collection and analysis can critically alter the outcomes and interpretations of research. In the context of Project Hammer, potential biases might arise from several sources, including the overrepresentation of data from particular vendors, time periods, or promotional sales. These biases could inadvertently favor certain price ranges or stock statuses, misleading conclusions about general market conditions. To mitigate these effects, it's necessary to employ rigorous sampling methods, ensure a balanced representation of all relevant categories, and critically evaluate the influence of promotional activities on price and stock data.
-# Reference
+Bias in data collection and analysis can critically alter the outcomes and interpretations of research. In the context of Project Hammer, potential biases might arise from several sources, including the over representation of data from particular vendors, time periods, or promotional sales. These biases could inadvertently favor certain price ranges or stock statuses, misleading conclusions about general market conditions. To mitigate these effects, it's necessary to employ rigorous sampling methods, ensure a balanced representation of all relevant categories, and critically evaluate the influence of promotional activities on price and stock data.
+
+\newpage
+# References
