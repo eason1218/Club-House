@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repo provides students with a foundation for their own projects associated with *Telling Stories with Data*. You do not need every aspect for every paper and you should delete aspects that you do not need.
+This repo focuses on examining the price distribution of products and the potential impact of stock status on pricing for the brand "Club House." The data used in this study is derived from Filipp’s Hammer database and analyzed using the programming language R. By exploring detailed information on Club House products—including product names, prices, and stock levels—this analysis aims to uncover insights into the brand's pricing strategies and possible trends in consumer demand.
 
 
 ## File Structure
